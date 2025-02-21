@@ -1,6 +1,13 @@
 import { useState } from "react"
 
-export default function TextExpander ({children, maxLength=50, buttonText="Show More", collapseButtonText="Show Less", buttonColor, buttonBgColor}) {
+export default function TextExpander ({
+    children, 
+    maxLength=50, 
+    buttonText="Show More", 
+    collapseButtonText="Show Less", 
+    buttonColor, 
+    buttonBgColor
+}) {
     const [expanded, setExpanded] = useState(false);
 
     return (
